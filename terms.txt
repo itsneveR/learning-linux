@@ -1,0 +1,21 @@
+~environmet variabels(ENVs):
+    -they define the behavior of the environment.
+    
+    -Every Linux process has an associated set of environment variables 
+        that influence its behavior and interactions with other processes.
+    -In Linux, environment variables are typically accessed through the shell.
+    -An environment variable in Linux can have global or local scope.  
+
+    -To set a global ENV  : export NAME=Value
+
+    -To set user wide ENVs : These variables are set and configured in ~/.bashrc, ~/.bash_profile, ~/.bash_login, ~/.profile 
+        Add variable in those files like : export NAME=Value
+    
+    -To set system wide ENVs: These variables are set and configured in /etc/environment, /etc/profile, /etc/profile.d/, /etc/bash.bashrc files according to the requirement.   
+    These variables can be accessed by any user and persist through power offs. 
+        Add variable in the file opened.  -> NAME=Value
+
+    example : 
+        -go compiler uses $GOPATH environment variable so it can find where you Go code is.
+        -you can set a ENV for your program like $DBPATH to determine the path of your database and pass it to your program
+        
